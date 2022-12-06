@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+
+ body{
+   position: relative;
+   margin: 0 auto;
+
+   box-sizing: border-box;
+ }
+
+
+ #korea, #foreign{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+ }
+
+ #korea h1, #foreign h1{
+    position: absolute;
+    margin: 15px 0 0 25px;
+    color: rgb(52,152,219);
+ }
+
+ #korea_p{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 7%;
+ }
+
+ .special{
+   position: relative;
+   width: 100%;
+   margin: 0 auto;
+   padding-left: 5%;
+ }
+
+ .special::after{
+    content: "";
+    display: block;
+    clear: both;
+ }
+
+ .special li{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 470px;
+    margin: 10px;
+    background-color: rgba(186,220,243,0.7);
+    border-radius: 10px;
+ }
+
+ .logo{
+    width: 65px;
+    height: 65px;
+    margin: 10px;
+ }
+
+ #bluebottle_logo{
+    border-radius: 65px;
+ }
+
+ #megacoffee_logo{
+   background-color: #fff;
+   border-radius: 65px;
+ }
+
+ .korea_product{
+    position: relative;
+    width: 200px;
+    height: 180px;
+    margin: 20% 0 5% 0;
+    left: -5%;
+    filter: drop-shadow(3px 3px 3px rgb(120, 120, 120));
+    object-fit: contain;
+ }
+ 
+ .special li span{
+    font-size: 1.1em;
+    color: rgb(78, 48, 22);
+ }
+
+ .special li a:hover{
+   opacity: 0.7;
+ }
+
+ .product_name, .product_price{
+   position: relative;
+   display: block;
+   text-align: center;
+   font-size: 1.3em;
+   line-height: 2em;
+   font-weight: bold;
+ }
+
+ .product_price{
+   line-height: 1.5em;
+   padding-bottom: 10px;
+ }
+
+ .product_des{
+   display: block;
+   width: 80%;
+   margin: 0 auto;
+   padding: 10px 0;
+   text-align: center;
+   border-top: 3px solid rgb(78, 48, 22);
+   font-size: 1em;
+   font-weight: normal;
+   line-height: 1.5em;
+ }
+
+#foreign{
+   position: relative;
+   margin-top: 6%;
+   margin-bottom: 5%;
+
+}
+
+#foreign section{
+   margin-top: 6%;
+}
+
+.point{
+   display: block;
+   width: 20px;
+   height: 20px;
+   border-radius: 20px;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(78, 48, 22);
+}
+
+.flag{
+   position: relative;
+   width:70px;
+   height:70px;
+   top: -85px;
+   left: 10px;
+   z-index: 20;
+}
+
+.flag_img{
+   position: relative;
+   width: 70px;
+   height: 70px;
+   object-fit: contain;
+}
+
+#landmark_ca img{
+   transform: scale(1.8);
+}
+
+#point_br{
+   position: absolute;
+   top: 580px;
+   left: 340px;
+   z-index: 30;
+}
+
+#point_thai{
+   position: absolute;
+   top: 420px;
+   left: 885px;
+   z-index: 30;
+}
+
+#point_fr{
+   position: absolute;
+   top: 300px;
+   left: 565px;
+   z-index: 30;
+}
+
+#point_us{
+   position: absolute;
+   top: 320px;
+   left: 250px;
+   z-index: 30;
+}
+
+#point_jp{
+   position: absolute;
+   top: 340px;
+   left: 1020px;
+   z-index: 30;
+}
+
+#point_ar{
+   position: absolute;
+   top: 500px;
+   left: 380px;
+   z-index: 30;
+} 
+
+#point_ca{
+   position: absolute;
+   top: 300px;
+   left: 850px;
+   z-index: 30;
+}
+
+.foreign_s{
+   position: relative;
+   width: 35%;
+   height: 400px;
+   background-color: rgba(186,220,243,0.7);
+   border-radius: 10px;
+}
+
+#brazil, #us, #japan, #argentina, #central_asia{
+   height: 450px;
+}
+
+.landmark{
+   position: absolute;
+   width: 85px;
+   height: 85px;
+   margin: 10px;
+   top: 0;
+}
+
+.product_for{
+   position: relative;
+   width: 250px;
+   height: 200px;
+   margin: 20% 27% 3% 20%;
+   object-fit: contain;
+}
+
+.foreign_s p{
+   width: 80%;
+   margin: 0 auto;
+   border-top: 3px solid rgb(78, 48, 22);
+   text-align: center;
+   color:rgb(78, 48, 22);
+   line-height: 1.5em;
+}
+
+.foreign_s p span{
+   display: block;
+   padding-top: 1em;
+   font-size: 1.1em;
+}
+
+.point_a:hover .point{
+   background-color: rgb(52,152,219);
+}
+ 
+#point_br:hover ~ #brazil{
+   visibility: visible;
+}
+
+#brazil{
+   position: absolute;
+   top: 200px;
+   left: 33%;
+   z-index: 100;
+   visibility: hidden;
+}
+
+#point_thai:hover ~ #thai{
+   visibility: visible;
+}
+
+#thai{
+   position: absolute;
+   top: 200px;
+   left: 38%;
+   z-index: 100;
+   visibility: hidden;
+}
+
+#point_fr:hover ~ #france{
+   visibility: visible;
+}
+
+#france{
+   position: absolute;
+   top: 150px;
+   left: 50%;
+   z-index: 100;
+   visibility: hidden;
+}
+
+#point_us:hover ~ #us{
+   visibility: visible;
+}
+
+#us{
+   position: absolute;
+   top: 200px;
+   left: 25%;
+   z-index: 100;
+   visibility: hidden;
+}
+
+#point_jp:hover ~ #japan{
+   visibility: visible;
+}
+
+#japan{
+   position: absolute;
+   top: 200px;
+   left: 48%;
+   z-index: 100;
+   visibility: hidden;
+}
+
+#point_ar:hover ~ #argentina{
+   visibility: visible;
+}
+
+#argentina{
+   position: absolute;
+   top: 200px;
+   left: 35%;
+   z-index: 100;
+   visibility: hidden;
+} 
+
+#point_ca:hover ~ #central_asia{
+   visibility: visible;
+}
+
+#central_asia{
+   position: absolute;
+   top: 150px;
+   left: 34%;
+   z-index: 100;
+   visibility: hidden;
+} 
